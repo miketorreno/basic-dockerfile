@@ -1,0 +1,8 @@
+FROM alpine:latest
+WORKDIR /app
+
+COPY entrypoint.sh ./
+
+ENTRYPOINT ["./entrypoint.sh"]
+
+CMD ["Captain"]
